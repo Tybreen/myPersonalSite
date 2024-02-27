@@ -14,14 +14,14 @@ header {
 header > h1 {
   color: white;
   font-size: 50px;
-  margin: 10px 30px;
+  margin: 10px 20px;
 }
 
 nav {
   display: flex;
   justify-content: right;
   align-items: center;
-  margin-right: 30px
+  margin-right: 20px
 }
 
 nav * {
@@ -69,9 +69,8 @@ img {
 }
 
 img.intro {
-  width: 33vw;
+  width: min(33vw, 425px);
   margin-left: 20px;
-
 }
 
 footer {
@@ -81,8 +80,36 @@ footer {
   font-family: cursive;
 }
 
-.interests {
+main.interests > section {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  border-top-style: solid;
+}
+
+main.interests > h2 {
+  margin-bottom: 2px;
+}
+
+main.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+main.portfolio > h1 {
+  margin-bottom: 50px;
+}
+
+main.portfolio > section > section > img {
+  width: 500px;
+  margin-left: 20px;
+}
+
+.project > section {
+  display: flex;
+}
+
+.project {
+  margin-bottom: 50px;
+  border-top-style: solid;
 }
