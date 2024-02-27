@@ -13,7 +13,8 @@ header {
 
 header > h1 {
   color: white;
-  margin-left: 30px;
+  font-size: 50px;
+  margin: 10px 30px;
 }
 
 nav {
@@ -28,12 +29,17 @@ nav * {
   font-size: 20px;
   margin: 20px 10px;
   text-decoration: none;
+  text-align: center;
 }
 
 nav > p {
   font-size: 30px;
   color: white;
   cursor: default;
+  padding-bottom: 2px;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
 }
 
 nav > a {
@@ -44,28 +50,28 @@ nav > a:hover {
   font-size: 30px;
 }
 
-h1 {
-  font-size: 50px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-main {
+.intro {
   display: flex;
+  justify-content: space-evenly;
 }
 
-main > section {
+.intros > section {
   display: flex;
   justify-content: right;
   flex-direction: column;
 }
 
-
 img {
-  width: min(33vw, 50vh);
+  width: 500px;
   margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px black;
+}
+
+img.intro {
+  width: 33vw;
   margin-left: 20px;
-  /* TODO: box-shadow: 0px, 10px; */ 
+
 }
 
 footer {
@@ -73,4 +79,10 @@ footer {
   justify-content: center;
   margin-top: 30px;
   font-family: cursive;
+}
+
+.interests {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
